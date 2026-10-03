@@ -1,0 +1,72 @@
+2026-10-03 15:47:49,404 INFO    __main__: Starting Whisperwing (python 3.11.9)
+2026-10-03 15:47:49,584 INFO    services.hotkey_service: Global hotkey registered: ctrl+alt+space
+2026-10-03 15:47:49,585 INFO    __main__: Whisperwing started
+2026-10-03 15:47:49,585 INFO    services.speech_service: Loading Faster-Whisper model 'small' (device=cpu, compute=int8)
+2026-10-03 15:47:49,586 INFO    __main__: Speech model: Loading model 'small'…
+2026-10-03 15:47:52,509 INFO    httpx: HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-10-03 15:47:52,665 INFO    httpx: HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small/revision/main "HTTP/1.1 200 OK"
+2026-10-03 15:47:52,832 INFO    httpx: HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small/tree/536b0662742c02347bc0e980a01041f333bce120?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-03 15:47:53,021 INFO    httpx: HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/model.bin "HTTP/1.1 302 Found"
+D:\! Personal\Projects\voice dictation\.venv\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\pc\.cache\huggingface\hub. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+2026-10-03 15:47:53,047 INFO    httpx: HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-03 15:47:53,048 INFO    httpx: HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/vocabulary.txt "HTTP/1.1 307 Temporary Redirect"
+2026-10-03 15:47:53,048 INFO    httpx: HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-03 15:47:53,049 WARNING huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-03 15:47:53,216 INFO    httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small/536b0662742c02347bc0e980a01041f333bce120/vocabulary.txt?%2FSystran%2Ffaster-whisper-small%2Fresolve%2F536b0662742c02347bc0e980a01041f333bce120%2Fvocabulary.txt=&etag=%22c9074644d9d1205686f16d411564729461324b75%22 "HTTP/1.1 200 OK"
+2026-10-03 15:47:53,223 INFO    httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small/536b0662742c02347bc0e980a01041f333bce120/config.json?%2FSystran%2Ffaster-whisper-small%2Fresolve%2F536b0662742c02347bc0e980a01041f333bce120%2Fconfig.json=&etag=%22e5047537059bd8f182d9ca64c470201585015187%22 "HTTP/1.1 200 OK"
+2026-10-03 15:47:53,317 INFO    httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small/536b0662742c02347bc0e980a01041f333bce120/tokenizer.json?%2FSystran%2Ffaster-whisper-small%2Fresolve%2F536b0662742c02347bc0e980a01041f333bce120%2Ftokenizer.json=&etag=%227818adb6de9fa3064d3ff81226fdd675be1f6344%22 "HTTP/1.1 200 OK"
+2026-10-03 15:47:53,318 INFO    httpx: HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small/xet-read-token/536b0662742c02347bc0e980a01041f333bce120 "HTTP/1.1 200 OK"
+2026-10-03 15:47:53,392 INFO    httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small/536b0662742c02347bc0e980a01041f333bce120/vocabulary.txt?%2FSystran%2Ffaster-whisper-small%2Fresolve%2F536b0662742c02347bc0e980a01041f333bce120%2Fvocabulary.txt=&etag=%22c9074644d9d1205686f16d411564729461324b75%22 "HTTP/1.1 200 OK"
+2026-10-03 15:47:53,398 INFO    httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small/536b0662742c02347bc0e980a01041f333bce120/config.json?%2FSystran%2Ffaster-whisper-small%2Fresolve%2F536b0662742c02347bc0e980a01041f333bce120%2Fconfig.json=&etag=%22e5047537059bd8f182d9ca64c470201585015187%22 "HTTP/1.1 200 OK"
+D:\! Personal\Projects\voice dictation\.venv\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\pc\.cache\huggingface\hub\models--Systran--faster-whisper-small. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+2026-10-03 15:47:53,500 INFO    httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small/536b0662742c02347bc0e980a01041f333bce120/tokenizer.json?%2FSystran%2Ffaster-whisper-small%2Fresolve%2F536b0662742c02347bc0e980a01041f333bce120%2Ftokenizer.json=&etag=%227818adb6de9fa3064d3ff81226fdd675be1f6344%22 "HTTP/1.1 200 OK"
+2026-10-03 15:50:26,257 INFO    services.speech_service: Model 'small' ready in 154.6s
+2026-10-03 15:50:26,258 INFO    __main__: Speech model: Model 'small' ready
+2026-10-03 15:50:57,661 INFO    services.speech_service: Recording started
+2026-10-03 15:51:01,166 INFO    services.speech_service: Recording stopped (3.5s)
+2026-10-03 15:51:01,168 INFO    faster_whisper: Processing audio with duration 00:03.458
+2026-10-03 15:51:01,295 INFO    faster_whisper: VAD filter removed 00:03.458 of audio
+2026-10-03 15:51:02,615 INFO    faster_whisper: Detected language 'en' with probability 0.33
+2026-10-03 15:51:02,617 INFO    services.speech_service: Transcribed 3.5s of audio (lang=en, prob=0.33) -> 0 chars
+2026-10-03 15:51:02,618 INFO    services.tray_service: Notify: Whisperwing — No speech detected.
+2026-10-03 15:53:19,443 INFO    services.speech_service: Recording started
+2026-10-03 15:53:19,568 INFO    services.speech_service: Recording stopped (0.1s)
+2026-10-03 15:53:19,569 INFO    services.speech_service: Recording too short; skipping transcription
+2026-10-03 15:53:19,570 INFO    services.tray_service: Notify: Whisperwing — No speech detected.
+2026-10-03 15:53:20,186 INFO    services.speech_service: Recording started
+2026-10-03 15:53:24,239 INFO    services.speech_service: Silence detected; stopping recording
+2026-10-03 15:53:24,258 INFO    services.speech_service: Recording stopped (4.0s)
+2026-10-03 15:53:24,260 INFO    faster_whisper: Processing audio with duration 00:04.030
+2026-10-03 15:53:24,267 INFO    faster_whisper: VAD filter removed 00:02.782 of audio
+2026-10-03 15:53:25,494 INFO    faster_whisper: Detected language 'en' with probability 0.96
+2026-10-03 15:53:26,809 INFO    services.speech_service: Transcribed 4.0s of audio (lang=en, prob=0.96) -> 6 chars
+2026-10-03 15:53:26,934 INFO    services.typing_service: Inserted 6 characters
+2026-10-03 15:53:37,493 INFO    services.speech_service: Recording started
+2026-10-03 15:53:41,360 INFO    services.speech_service: Silence detected; stopping recording
+2026-10-03 15:53:41,387 INFO    services.speech_service: Recording stopped (3.8s)
+2026-10-03 15:53:41,387 INFO    faster_whisper: Processing audio with duration 00:03.848
+2026-10-03 15:53:41,393 INFO    faster_whisper: VAD filter removed 00:02.600 of audio
+2026-10-03 15:53:42,632 INFO    faster_whisper: Detected language 'en' with probability 0.91
+2026-10-03 15:53:43,921 INFO    services.speech_service: Transcribed 3.8s of audio (lang=en, prob=0.91) -> 6 chars
+2026-10-03 15:53:44,036 INFO    services.typing_service: Inserted 6 characters
+2026-10-03 15:53:52,716 INFO    services.speech_service: Recording started
+2026-10-03 15:54:05,953 INFO    services.speech_service: Silence detected; stopping recording
+2026-10-03 15:54:05,973 INFO    services.speech_service: Recording stopped (13.2s)
+2026-10-03 15:54:05,977 INFO    faster_whisper: Processing audio with duration 00:13.208
+2026-10-03 15:54:06,000 INFO    faster_whisper: VAD filter removed 00:02.200 of audio
+2026-10-03 15:54:07,259 INFO    faster_whisper: Detected language 'ar' with probability 0.49
+2026-10-03 15:54:09,154 INFO    services.speech_service: Transcribed 13.2s of audio (lang=ar, prob=0.49) -> 81 chars
+2026-10-03 15:54:10,070 INFO    services.typing_service: Inserted 81 characters
+2026-10-03 15:54:17,463 INFO    services.speech_service: Recording started
+2026-10-03 15:54:24,565 INFO    services.speech_service: Silence detected; stopping recording
+2026-10-03 15:54:24,608 INFO    services.speech_service: Recording stopped (7.1s)
+2026-10-03 15:54:24,611 INFO    faster_whisper: Processing audio with duration 00:07.098
+2026-10-03 15:54:24,624 INFO    faster_whisper: VAD filter removed 00:00.688 of audio
+2026-10-03 15:54:25,910 INFO    faster_whisper: Detected language 'en' with probability 0.98
+2026-10-03 15:54:27,298 INFO    services.speech_service: Transcribed 7.1s of audio (lang=en, prob=0.98) -> 53 chars
+2026-10-03 15:54:27,918 INFO    services.typing_service: Inserted 53 characters

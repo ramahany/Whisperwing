@@ -1,0 +1,11 @@
+# UI
+PySide6>=6.5,<7
+# Speech recognition (fully local)
+faster-whisper>=1.0,<2
+# Audio capture
+sounddevice>=0.4.6
+numpy>=1.24
+# Global hotkeys + text injection
+keyboard>=0.13.5
+# Packaging
+pyinstaller>=6.0
